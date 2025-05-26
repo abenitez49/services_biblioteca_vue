@@ -1,31 +1,22 @@
-# Products Vue
+
+# Biblioteca Vue
 
 ## Consumir API con Vue 3
 
-Se consume la api creada en Laravel 9 (https://gitlab.com/DanCruise/laraproducts)
-- <b>Vue.js V3 </b>
-- CRUD
-- Gráfica con Chart.js
-- Reporte con DataTables
+Este sistema llamado **Biblioteca** está desarrollado en **Vue.js V3** y se conecta a una API REST creada con Python. Su objetivo principal es permitir el **ABM (Alta, Baja y Modificación)** de los siguientes recursos:
 
-Instalación:
+* **Géneros**
+* **Autores**
+* **Libros**
+* **Calificaciones**
 
-1) Descarga e instala la [API de laravel](https://gitlab.com/DanCruise/laraproducts), las instrucciones están dentro del archivo README.md del repositorio.
+El sistema permite gestionar cada uno de estos elementos mediante una interfaz moderna, con búsqueda en tiempo real y visor de archivos PDF/EPUB para libros digitales.
 
-2) Clonar o descargar este proyecto
+### Tecnologías utilizadas:
 
-3) Acceder mediante terminal a la carpeta del proyecto
+* <b>Vue.js V3</b>
+* CRUD completo con consumo de API REST
+* Integración opcional con Chart.js y DataTables para futuras mejoras o reportes
 
-4) Instalar las dependencias utilizadas:  <b>npm install</b>
 
-5) Ejecutar el servidor <b>npm run serve</b>
-
-6) Ver en el navegador el proyecto, por lo general la url es: <b>http://localhost:8080/</b>
-
-## Videos de explicación
-
-Si quieres ver el video en donde se explica paso a paso como realizar este CRUD [te comparto el siguiente enlace](https://www.youtube.com/watch?v=yKpdX0Fdy60)
-
-Si quieres ver el video en donde se explica paso a paso como realizar la gráfica [te comparto el siguiente enlace](https://www.youtube.com/watch?v=quU8zeo__Vg)
-
-Si quieres ver el video en donde se explica paso a paso como utilizar DataTables [te comparto el siguiente enlace](https://www.youtube.com/watch?v=6JK0WJG9JIs)
+---
