@@ -10,6 +10,9 @@
           type="text"
           placeholder="🔍 Buscar por nombre..."
         />
+        <button @click="irCrear" class="btn btn-primary ms-3" title="Agregar Género">
+          <i class="fa-solid fa-plus"></i> Crear
+        </button>
       </div>
 
       <!-- CUERPO -->
@@ -37,7 +40,7 @@
               <tr v-for="genero in generosFiltrados" :key="genero.id">
                 <td>{{ genero.id }}</td>
                 <td>{{ genero.nombre }}</td>
-                <td>{{ genero.usuario_creador }}</td>
+                <td>{{ genero.usuario_creador_username }}</td>
                 <td>{{ formatFecha(genero.fecha_creacion) }}</td>
                 <td>{{ formatFecha(genero.fecha_modificacion) }}</td>
                 <td class="text-center">
@@ -80,6 +83,9 @@ export default {
     }
   },
   methods: {
+    irCrear() {
+      this.$router.push('/generos/crear')
+    },
     async fetchGeneros() {
       
       console.log('Token en localStorage:', localStorage.getItem('token'))
@@ -107,7 +113,7 @@ export default {
       })
     },
     irEditar(id) {
-      this.$router.push(`/generos/editar/${id}`)
+      this.$router.push(`/generos/${id}`)
     },
     async eliminarGenero(id) {
       if (!confirm('¿Estás seguro de eliminar este género?')) return

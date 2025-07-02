@@ -9,6 +9,14 @@ import GeneroView from '../views/generos/GeneroView.vue';
 import AutoresView from '../views/autores/AutoresView.vue';
 import AutorEditView from '../views/autores/AutorEditView.vue';
 import LibroView from '../views/libros/LibroView.vue';
+import LibroCreateView from '../views/libros/LibroCreateView.vue';
+import CalificacionesView from '../views/calificaciones/CalificacionesView.vue';
+import GeneroEditView from '../views/generos/GeneroEditView.vue';
+import GeneroCreateView from '../views/generos/GeneroCreateView.vue';
+
+
+
+
 
 const routes = [
   {
@@ -61,6 +69,26 @@ const routes = [
     path: '/libros',
     name: 'libros',
     component: LibroView
+  },
+  {
+    path: '/libros/crear',
+    name: 'libro_crear',
+    component: LibroCreateView
+  },
+  {
+    path: '/calificaciones',
+    name: 'calificaciones',
+    component: CalificacionesView
+  },
+  {
+    path: '/generos/:id',
+    name: 'genero_edit',
+    component: GeneroEditView
+  },
+  {
+    path: '/generos/crear',
+    name: 'genero_crear',
+    component: GeneroCreateView
   }
   
 ]

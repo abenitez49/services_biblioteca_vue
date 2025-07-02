@@ -9,6 +9,9 @@
           type="text"
           placeholder="🔍 Buscar por nombre..."
         />
+        <button @click="irCrear" class="btn btn-primary ms-3" title="Agregar Libro">
+          <i class="fa-solid fa-plus"></i> Crear
+        </button>
 
       </div>
 
@@ -140,6 +143,9 @@ export default {
     }
   },
   methods: {
+    irCrear() {
+      this.$router.push('/libros/crear')
+    },
     async fetchLibros() {
       this.loading = true
       try {
